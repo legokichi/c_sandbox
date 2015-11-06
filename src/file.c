@@ -4,9 +4,10 @@ ref
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <main.h>
 #define READ_FILE_CHAR_NUM 256
 
-int main(void){
+void file(void){
   FILE *fp;
   //FILE *fopen(const char *filename, const char *mode)
   if ((fp = fopen("test.txt", "r")) == NULL) {
@@ -19,5 +20,4 @@ int main(void){
     printf("%s", s);
   }
   fclose(fp);
-  return 0;
 }

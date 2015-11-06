@@ -1,10 +1,7 @@
 #include <stdio.h>
-#include <duxcalib.h>
+#include <main.h>
 
-//int main(int argc, char *argv[]);
-int main(int argc, char **argv){
-  printf("hello world.");
-  
+void pointer(){
   char x = 0b10101010;
   char y = 1;
   char * _x;
@@ -15,5 +12,4 @@ int main(int argc, char **argv){
   printX((char)_x);
   printf("\nreference:\n");
   printX(* _x);
-  return 0;
 }

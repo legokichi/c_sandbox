@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "duxcalib.h"
+#include <main.h>
 
 void printBin(char n){
   for(int i=7;i>=0;i--)
