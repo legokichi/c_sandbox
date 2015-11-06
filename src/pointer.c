@@ -8,8 +8,8 @@ void pointer(){
   _x = & x;
   printf("\nobject value:\n");
   printX(x);
-  printf("\naddress:\n");
-  printX((char)_x);
+  //printf("\naddress:\n");
+  //printX(_x);
   printf("\nreference:\n");
   printX(* _x);
 }
