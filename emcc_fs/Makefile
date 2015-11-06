@@ -1,0 +1,2 @@
+default:
+	gcc file.c
