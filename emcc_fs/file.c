@@ -1,3 +1,7 @@
+/*
+ref
+  http://www9.plala.or.jp/sgwr-t/c/sec17.html
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #define READ_FILE_CHAR_NUM 256
