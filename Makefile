@@ -27,3 +27,4 @@ debugjs: asmjs
 runjs:
 	cd ./bin
 	node a.out.js ../test.txt
+
