@@ -15,6 +15,7 @@ void file(void){
     exit(EXIT_FAILURE);
   }
   char s[READ_FILE_CHAR_NUM];
+  //malloc()
   //char *fgets(char *s, int n, FILE *stream);
   while (fgets(s, READ_FILE_CHAR_NUM, fp) != NULL) {
     printf("%s", s);
