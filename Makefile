@@ -1,6 +1,6 @@
 INCLUDE = -I./include
 CC = gcc -std=c11
-CFLAGS = -O3
+CFLAGS = -O3 -Wall
 EMCC = emcc -std=c11
 EMFLAGS = -O3 -g3 --js-opts 1 --closure 2
 DIST = -o ./bin/a.out
@@ -27,4 +27,3 @@ debugjs: asmjs
 runjs:
 	cd ./bin
 	node a.out.js ../test.txt
-

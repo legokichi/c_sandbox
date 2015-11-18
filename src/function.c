@@ -12,12 +12,11 @@ void forEach(void (*lambda)(char elm[], char index), char argc, char *argv[]){
   }
 }
 
-void function(){
-  char hello[] = "hello";
-  char world[] = "world";
-  char **str;
-  str[0] = &hello;
-  str[1] = &world;
-  str[2] = NULL;
-  forEach(&_log, 2, &str);
+void f_nction(){
+  char **str = {
+    &"hello\0",
+    &"world\0",
+    NULL
+  };
+  //forEach(&_log, 2, &str);
 }

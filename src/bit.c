@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <main.h>
 
-void bit(){
+void b_t(){
   char z = 0b11111110;
   printf("signed int char: %d\n", z);
   printf("unsigned int char: %u\n", z);

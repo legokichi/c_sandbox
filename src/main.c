@@ -11,11 +11,20 @@ int main(int argc, char **argv){
   printf("]\n");
 
   printf("hello world.\n");
-
-  bit();
-  pointer();
-  file();
-  function();
-  st_rct();
+  printf("# scope\n");
+  sc_pe();
+  printf("# bit\n");
+  b_t();
+  printf("# pointer\n");
+  p_inter();
+  printf("# file\n");
+  f_le();
+  printf("# thread\n");
+  thr_ad();
+  printf("# struct\n");
+  str_ct();
+  printf("# sizeof\n");
   s_zeof();
+  printf("# function\n");
+  f_nction();
 }

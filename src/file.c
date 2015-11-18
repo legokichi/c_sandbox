@@ -7,7 +7,7 @@ ref
 #include <main.h>
 #define READ_FILE_CHAR_NUM 256
 
-void file(void){
+void f_le(void){
   FILE *fp;
   //FILE *fopen(const char *filename, const char *mode)
   if ((fp = fopen("test.txt", "r")) == NULL) {

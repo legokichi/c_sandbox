@@ -1,9 +1,11 @@
-//int main(int argc, char **argv);
-void bit();
-void file();
-void pointer();
+int main(int argc, char **argv);
+void b_t();
+void f_le();
+void p_inter();
 void printBin(char n);
 void printX(char x);
-void function();
-void st_rct();
+void f_nction();
+void str_ct();
 void s_zeof();
+void sc_pe();
+void thr_ad();

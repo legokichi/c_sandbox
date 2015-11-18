@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <main.h>
 
-void pointer(){
+void p_inter(){
   char x = 0b10101010;
   char y = 1;
   char * _x;
