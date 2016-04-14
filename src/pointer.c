@@ -12,4 +12,5 @@ void p_inter(){
   //printX(_x);
   printf("\nreference:\n");
   printX(* _x);
+  printf("%p\n", _x);
 }

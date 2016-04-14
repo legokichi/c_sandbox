@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <main.h>
 
 // type def
@@ -25,11 +26,11 @@ struct point * add_ref(struct point * a_ptr, struct point * b_ptr){
   printf("sizeof(a_stack_val)=%lu\n", sizeof(a_stack_val));
   printf("sizeof(b_stack_val)=%lu\n", sizeof(b_stack_val));
   printf("sizeof(&c_heap_ptr)=%lu\n", sizeof(&c_heap_ptr));
-  printf("a_ptr=%08x\n", a_ptr); // caller stack address
-  printf("b_ptr=%08x\n", b_ptr); // caller stack address
-  printf("&a_stack_val=%08x\n", &a_stack_val); // add_red stack address
-  printf("&b_stack_val=%08x\n", &b_stack_val); // add_red stack address
-  printf("c_heap_ptr=%08x\n", c_heap_ptr); // heap address
+  printf("a_ptr=%p\n", a_ptr); // caller stack address
+  printf("b_ptr=%px\n", b_ptr); // caller stack address
+  printf("&a_stack_val=%p\n", &a_stack_val); // add_red stack address
+  printf("&b_stack_val=%p\n", &b_stack_val); // add_red stack address
+  printf("c_heap_ptr=%p\n", c_heap_ptr); // heap address
   (*c_heap_ptr).x = a_stack_val.x + b_stack_val.x;
   c_heap_ptr->y = a_ptr->y + (*b_ptr).y; // variation
   return c_heap_ptr;
